@@ -1,0 +1,28 @@
+{
+  "name": "kiku",
+  "version": "0.1.0",
+  "description": "capture extension",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "permissions": [
+    "desktopCapture",
+    "<all_urls>",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "asset/logo.jpg",
+    "default_title": "kiku",
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [{
+    "all_frames": true,
+    "matches": ["<all_urls>"],
+    "js": [
+      "node_modules/jquery/dist/jquery.js",
+      "build/content.js"
+    ],
+    "css": [
+      "src/content.css"
+    ]
+  }]
+}

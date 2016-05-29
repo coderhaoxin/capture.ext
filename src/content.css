@@ -1,0 +1,22 @@
+
+.kiku-mask {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(100, 100, 100, 0.7);
+}
+
+.kiku-view {
+  position: absolute;
+  z-index: 1111;
+  top: 100px;
+  bottom: 100px;
+  left: 100px;
+  right: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 3px lightseagreen solid;
+  cursor: pointer;
+}
